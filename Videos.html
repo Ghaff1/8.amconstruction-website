@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="Videos.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+});
+</script>
+</head>
+<body>
+<div id="PageHeader1" style="position:absolute;text-align:left;left:0px;top:0px;width:100%;height:100px;z-index:7777;">
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb2" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb2">
+<li><a href="">8.A.M LIMITED</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="./Home.html" class="nav-link">Home</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="./Home.html#services1" class="nav-link">Service #1</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./Home.html#services1" class="nav-link">Service #2</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./Home.html#services2" class="nav-link">Service #3</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="./Home.html#services2" class="nav-link">Service #4</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="./Home.html#portfolio" class="nav-link">Portfolio</a>
+</li>
+<li class="nav-item">
+<a href="./Home.html#about" class="nav-link">About</a>
+</li>
+<li class="nav-item">
+<a href="./About-US.html" class="nav-link">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="wb_MediaPlayer1" style="position:absolute;left:17px;top:114px;width:424px;height:281px;z-index:7;">
+<video id="MediaPlayer1" autoplay controls>
+<source src="AutoCAD - Arc Command.mp4" type="video/mp4">
+</video>
+</div>
+</body>
+</html>
